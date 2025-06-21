@@ -45,9 +45,9 @@ function Form () {
     
     return (
       <form onSubmit={NewCards} className="flex gap-[15px] relative flex-wrap xl:flex justify-center pt-20">
-        <input type="text" onChange={(e) => setPName(e.target.value)} placeholder="Ваше имя" className="bg-white w-full md:w-[230px] h-[62px] rounded-[9px] pl-[29px] lg:hidden"/>
+        <input type="text" onChange={(e) => setPName(e.target.value)} placeholder="Ваше имя" className="bg-white w-full md:w-[230px] h-[62px] rounded-[9px] pl-[29px] "/>
         <input type="tel" onChange={(e) => setTel(e.target.value)} placeholder="Номер телефона" className="bg-white w-full md:w-[230px] h-[62px] rounded-[9px] pl-[29px]"/>
-        <input type="text" onChange={(e) => setNum(e.target.value)} placeholder="Возраст" className="bg-white w-full  md:w-[230px] h-[62px] rounded-[9px] pl-[29px]"/>
+        <input type="text" onChange={(e) => setNum(e.target.value)} placeholder="Возраст" className="bg-white w-full  md:w-[230px] h-[62px] rounded-[9px] pl-[29px] lg:hidden"/>
         <Select onValueChange={select}>
           <SelectTrigger className="w-full md:w-[400px] h-[62px] bg-white text-gray-400">
             <SelectValue className="data-[placeholder]:text-[#00000066]" placeholder="Выберете курс" />
